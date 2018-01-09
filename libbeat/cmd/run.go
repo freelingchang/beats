@@ -12,6 +12,7 @@ import (
 )
 
 func genRunCmd(name, idxPrefix, version string, beatCreator beat.Creator, runFlags *pflag.FlagSet) *cobra.Command {
+	//此去执行 github.com/elastic/beats/filebeat/beater.New
 	runCmd := cobra.Command{
 		Use:   "run",
 		Short: "Run " + name,
