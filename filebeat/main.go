@@ -15,6 +15,7 @@ import (
 // Finally, prospector uses the registrar information, on restart, to
 // determine where in each file to restart a harvester.
 func main() {
+	//此去执行 github.com/elastic/beats/libbeat/cmd.genRunCmd.func1
 	if err := cmd.RootCmd.Execute(); err != nil {
 		os.Exit(1)
 	}
